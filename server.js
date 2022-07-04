@@ -10,3 +10,12 @@ app.use(bodyParser.json());
 
 const cors = require('cors');
 app.use(cors());
+
+const port = 8000;
+
+const server = app.listen(port, listening);
+
+function listening(){
+  console.log(server);
+  console.log(`you are running localhost: ${port}`);
+}
