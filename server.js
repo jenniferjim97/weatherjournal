@@ -21,3 +21,27 @@ function listening(){
   console.log(server);
   console.log(`you are running localhost: ${port}`);
 }
+
+//setting up GET request//
+app.get('/', function(req, res){
+  res.send(projectData);
+})
+
+//setting up post request//
+app.post('/', function(req, res){
+  res.send('POST received)');
+});
+
+const data = [];
+
+app.post('/', function(req, res){
+  console.log(req.body)
+  let newEntry = {
+    date: req.body.date,
+    temp: req.body.temp,
+    content: req.body.content
+  }
+
+  data.push(newEntry),
+  console.log(data)
+});
