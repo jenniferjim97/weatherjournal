@@ -1,4 +1,4 @@
-const apiKey = '<5e385d3aaf8368294232a1d646df1f43>&units=imperial'
+const apiKey = ''
 const baseURL = `https://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${apiKey}`
 const generateBtn = document.getElementById('generate');
 const userZip = document.getElementById('zip');
